@@ -1,10 +1,10 @@
 import string
 import random
 
-possibleCharacters = string.ascii_letters + string.digits + ' .,?!;:\'"'
+possibleCharacters = string.ascii_letters + string.digits + string.punctuation
 
 with open('lotr.txt', 'r') as file:
-    t = file.read()
+    t = file.read().strip()
 
 def generate_string(target):
     length = len(target)
