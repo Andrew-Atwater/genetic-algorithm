@@ -1,7 +1,7 @@
 import string
 import random
 
-possibleCharacters = string.ascii_letters + string.digits + string.punctuation
+possibleCharacters = string.ascii_letters + string.digits + " ,.:;-?!'\""
 
 with open('lotr.txt', 'r') as file:
     t = file.read().strip()
